@@ -1,0 +1,29 @@
+{
+  "name": "webpack_three_t",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jquery": "^3.3.30",
+    "awesome-typescript-loader": "^5.2.1",
+    "expose-loader": "^0.7.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.4.1",
+    "three": "^0.106.2",
+    "typescript": "^3.5.3",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.0.4",
+    "url-loader": "^2.0.1"
+  }
+}
