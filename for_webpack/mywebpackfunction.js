@@ -29,7 +29,7 @@ let getHtmlWebPackPlugin2=()=>{
     
     let htmlWebPackPlugin=new HtmlWebPackPlugin({
         template:dirTop+'index.html',
-        filename:'../index.html',
+        filename:'./mycode/index.html',
         chunks:[]
     })
 
@@ -45,7 +45,7 @@ let getHtmlWebPackPlugin2=()=>{
                 filename=filename.replace(/\.ts/,"");
                 let htmlWebPackPlugin=new HtmlWebPackPlugin({
                     template:dirTop+'template.html',
-                    filename:'../html/'+filename+'.html',
+                    filename:'./mycode/html/'+filename+'.html',
                     chunks:[filename]
                 })
                 result.push(htmlWebPackPlugin);

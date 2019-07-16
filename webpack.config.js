@@ -10,8 +10,8 @@ module.exports={
     mode:'development',
     entry:myWebpackFunction.getEntry2(),
     output:{
-        filename:'[name].js',
-        path:path.resolve(__dirname,'dist')+"/mycode/js/"
+        filename:'mycode/js/[name].js',
+        path:path.resolve(__dirname,'dist')
     },
     devtool: "source-map",
     resolve:{
@@ -33,7 +33,9 @@ module.exports={
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         compress: true,
-        port: 3001
+        port: 3001,
+        open:true,
+        openPage:'mycode/'
     },
 
     plugins: 
